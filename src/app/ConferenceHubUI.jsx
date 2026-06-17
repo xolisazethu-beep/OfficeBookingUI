@@ -489,9 +489,9 @@ function RoomsPage({ rooms, bookings, selRoom, setSelRoom, onBook, onAskCancel, 
 
 function BuildingsPage() {
   const buildings = [
-    {name:"Hoffman building", addr:"Jefferson street, 54", floors:6, rooms:45, hours:"Mon–Fri 11am–6pm · Sat–Sun 9am–9pm"},
-    {name:"Trustcorp building", addr:"Lincoln street, 182", floors:25, rooms:159, hours:"Mon–Sun · Day and night"},
-    {name:"Marlowe Tower", addr:"Riverside Ave, 8", floors:14, rooms:88, hours:"Mon–Sat 8am–8pm"},
+    {name:"Bitcube Main Campus", addr:"Nelson Mandela Drive, 142, Bloemfontein", floors:8, rooms:60, hours:"Mon–Fri 8am–6pm · Sat 9am–1pm"},
+    {name:"Bitcube North", addr:"Zastron Street, 78, Bloemfontein", floors:5, rooms:32, hours:"Mon–Fri 8am–5pm"},
+    {name:"Bitcube Central", addr:"President Brand Street, 21, Bloemfontein", floors:6, rooms:44, hours:"Mon–Sun · Day and night"},
   ];
   return (
     <>
@@ -739,7 +739,7 @@ export default function App() {
       {/* Main */}
       <div style={{flex:1,display:"flex",flexDirection:"column",minWidth:0}}>
         <div style={{background:WHITE,borderBottom:`1px solid #EFE0D9`,padding:"0 22px",height:58,display:"flex",alignItems:"center",gap:12,flexShrink:0}}>
-          <h1 style={{flex:1,margin:0,fontSize:17,fontWeight:700,fontFamily:"Georgia,serif",color:BLUE}}>Hoffman building</h1>
+          <h1 style={{flex:1,margin:0,fontSize:17,fontWeight:700,fontFamily:"Georgia,serif",color:BLUE}}>Bitcube Main Campus</h1>
           <span style={{fontSize:11,color:MUTE}}>Welcome, <b style={{color:BLUE}}>{user.name}</b></span>
           <div style={{width:32,height:32,borderRadius:"50%",background:`linear-gradient(135deg,#FF9E92,${RED})`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:11,fontWeight:700,color:WHITE}}>{user.initials}</div>
         </div>
